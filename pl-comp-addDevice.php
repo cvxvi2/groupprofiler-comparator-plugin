@@ -36,6 +36,7 @@ if(isset($_SESSION["LIN"])) {
               echo '<h3>Error - Missing Files</h3>';
               echo '<hr>';
               echo '<h4>The required module MD5This for Algs cannot be found.</h4>';
+              echo '<a href="index.php" class="btn btn-primary">OK</a>';
             }
           } else {
             echo '<h3>Error</h3>';
@@ -68,7 +69,6 @@ if(isset($_SESSION["LIN"])) {
     }
 } else {
   include 'wsubs/index-loutmsg.html';
-
 }
 include 'wsubs/includeBootstrapScript.html';
 echo '</body>';

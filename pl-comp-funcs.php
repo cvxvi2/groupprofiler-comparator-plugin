@@ -1,5 +1,9 @@
 <?php
 
+function getPluginVersion() {
+    return "v0.0.2";
+}
+
 function isAlgPresent() {
     if(is_file('algs/md5this.php')) {
         return true;      
