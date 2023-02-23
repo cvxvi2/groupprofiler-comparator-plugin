@@ -8,11 +8,11 @@ Latest revision includes support for a legacy str_contains module for devices ru
 Filesystem layout requirement
 
 ROOT
--GroupProfiler Installation
--app
---modcom
---lic
--groupprofiler-comparator-plugin files
+*GroupProfiler Installation
+*app
+**modcom
+**lic
+*groupprofiler-comparator-plugin files
 
 The files should be in the same directory as index.php for GroupProfiler.
 
