@@ -37,6 +37,7 @@ if(isset($_SESSION["LIN"])) {
               echo '<h3>Error - Missing Files</h3>';
               echo '<hr>';
               echo '<h4>The required module MD5This for Algs cannot be found.</h4>';
+              echo '<a href="index.php" class="btn btn-primary">OK</a>';
             }
 
           } else {
@@ -62,7 +63,10 @@ if(isset($_SESSION["LIN"])) {
           echo '											</div>';
           echo '										</form>';
           echo '</div>';
-
+          echo '<div class="container">';
+          echo '<h3>What does this do?</h3>';
+          echo '<h4>Disabling a device should be used when you want to block a device from running Comparator, this is useful if you no longer have control of the device you had the client installed on.</h4>';
+          echo '</div>';
         }
         
 

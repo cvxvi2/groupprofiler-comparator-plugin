@@ -29,7 +29,7 @@ if(isset($_SESSION["LIN"])) {
                 echo '<h3>Poll Result</h3>';
                 echo '<hr>';
                 echo '<h4>The requested device is not present on this activation server. Nothing has been changed.</h4>';  
-                echo '<h4>If you are trying to allow a device to connect for the first time, use the Add Device button instead.</h4>';
+                echo '<h4>If you are trying to allow a device to connect for the first time, use the <a href="pl-comp-addDevice.php">Add Device</a> button instead.</h4>';
                 echo '<a href="pl-comp-enDevice.php" class="btn btn-primary">OK</a>';
               }
             } else {
@@ -59,6 +59,12 @@ if(isset($_SESSION["LIN"])) {
           echo '										</form>';
           echo '</div>';
         }
+        echo '<div class="container">';
+        echo '<h3>What does this do?</h3>';
+        echo '<h4>Enabling a device can only be run on a device that is <b>not</b> in an enabled state. It cannot be performed on a device that has not yet been added to the Comparator license server.';
+        echo 'If you need to add a device to the Comparator license server so it can run Comparator without activation warnings, you will need to use the <a href="pl-comp-addDevice.php">Add Device</a> page instead.</h4>';
+        echo '</div>';
+
         echo '</div>';
       } else {
         echo '<h3>Missing Comparator plugin files</h3>';

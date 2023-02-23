@@ -22,7 +22,7 @@ if(isset($_SESSION["LIN"])) {
               if(is_dir('app/modcom/lic/'.$nwdv)) {
                 echo '<h3>Poll Result</h3>';
                 echo '<hr>';
-                echo '<h4>The device already exists on this Comparator activation server. You should use the Enable or Disable functions instead.</h4>';  
+                echo '<h4>The device already exists on this Comparator activation server. You should use the <a href="pl-comp-enDevice.php">Enable</a> or <a href="pl-comp-disDevice.php">Disable</a> functions instead.</h4>';  
                 echo '<a href="pl-comp-addDevice.php" class="btn btn-primary">OK</a>';
               } else {
                 mkdir('app/modcom/lic/'.$nwdv) or die('<h3>ERROR -- Unable to create directory for new device.</h3>');
@@ -58,7 +58,10 @@ if(isset($_SESSION["LIN"])) {
           echo '											</div>';
           echo '										</form>';
           echo '</div>';
-
+          echo '<div class="container">';
+          echo '<h3>What does this do?</h3>';
+          echo '<h4>Adding a device to the Comparator license server allows Comparator to run without getting activation warnings which block the use of it. <br>You <b>cannot</b> do this on a device that is already added to the server. If your device has been disabled, use the <a href="pl-Comp-enDevice.php">enable device</a> page to re-enable it.</h4>';
+          echo '</div>';
         }
         echo '</div>';
       } else {
